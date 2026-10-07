@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+  <Popover id="commentsPopover" placement="PreferredBottomOrFlip" showHeader="true" title="Comments" contentWidth="25rem">
+    <content> 
+      <VBox id="VBox" width="22rem" class="sapUiSmallMargin">
+        <Label id="latestcommentlabel" text="Latest Comment" />
+        <TextArea id="latestcomment"
+                  rows="5"
+                  width="23rem"
+                  value="{latestComment/text}"
+                  editable="false"/>
+      </VBox>
+    </content>
+  </Popover>
+</core:FragmentDefinition>

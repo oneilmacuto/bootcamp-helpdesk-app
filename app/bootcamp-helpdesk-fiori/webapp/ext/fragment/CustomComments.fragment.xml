@@ -1,0 +1,23 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+>
+    <FlexBox
+        id="FBox"
+        justifyContent="Center"
+        alignItems="Center"
+        direction="Column"
+        width="100%"
+    >
+        <ObjectStatus
+            core:require="{ handler: 'bootcamphelpdeskfiori/bootcamphelpdeskfiori/ext/fragment/CustomComments'}"
+            icon="sap-icon://notification-2"
+            id="ObjectStatus"
+            tooltip="Comments"
+            state="None"
+            press="handler.onOpenCommentsPopover"
+			active="true"
+        >
+		</ObjectStatus>
+    </FlexBox>
+</core:FragmentDefinition>

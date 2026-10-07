@@ -114,6 +114,16 @@
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
                     "type": "GridTable"
+                  },
+                  "columns": {
+                    "CustomComments": {
+                      "header": "Comments",
+                      "position": {
+                        "anchor": "DataField::category::name",
+                        "placement": "After"
+                      },
+                      "template": "bootcamphelpdeskfiori.bootcamphelpdeskfiori.ext.fragment.CustomComments"
+                    }
                   }
                 }
               }
@@ -136,6 +146,15 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.fe.templates.ListReport.ListReportController": {
+            "controllerName": "bootcamphelpdeskfiori.bootcamphelpdeskfiori.ext.controller.List"
           }
         }
       }
